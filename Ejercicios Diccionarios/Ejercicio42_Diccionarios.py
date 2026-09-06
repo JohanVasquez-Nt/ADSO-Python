@@ -9,7 +9,6 @@ for _ in range(limite):
 print("-"*50)
 
 contacto = (str(input("Indique el nombre del contacto a buscar: ").lower))
-busqueda = diccionario_contactos.get(contacto)
 print("-"*50)
 
-print(f"Telefono de {contacto.title}: {busqueda}")
+print(f"Telefono de {contacto.title()}: {diccionario_contactos.get(contacto)}")

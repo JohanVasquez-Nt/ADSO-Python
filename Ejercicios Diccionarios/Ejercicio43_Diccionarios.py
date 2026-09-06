@@ -9,7 +9,6 @@ for _ in range(limite):
 print("-"*50)
 
 producto = (str(input("Indique el nombre del producto a buscar: ")).lower())
-busqueda = diccionario_productos.get(producto)
 print("-"*50)
 
-print(f"Cantidad disponible de {producto.title}: {busqueda}")
+print(f"Cantidad disponible de {producto.title()}: {diccionario_productos.get(producto)}")
